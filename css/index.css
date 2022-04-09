@@ -1,14 +1,27 @@
+*{
+    text-decoration: none;
+}
+a{
+    color: inherit;
+}
+a:hover{
+    color: orange;
+}
 .nav-bar{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 50px;
-    background-color: white;
-    padding: 0 70px;
+    background-color: #101010;
+    background-image: url(../images/bann.webp);
+    background-size: cover;
+    padding: 0px 5%;
+    color: white;
 }
 .nav-bar > div:first-child > img{
     width: 50px;
+    background-color: #e5e5e5cc;
 }
 .nav-bar > div:first-child{
     display: flex;
@@ -42,12 +55,17 @@
 .nav-bar > div:last-child > img{
     width: 50px;
 }
+.nav-bar > div:last-child > i{
+    font-size: 35px;
+    color: rgb(0, 219, 0);
+    justify-self: flex-start;
+}
 .nav-bar > div:last-child{
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 30px;
 }
 .nav-bar > div:last-child > a{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
@@ -56,6 +74,7 @@
     border: 1px solid;
     padding: 3px 8px;
     border-radius: 5px;
+    width:70px;
 }
 .nav-bar > div:last-child > a:last-child{
     background-color: orange;
@@ -76,6 +95,10 @@
     background-size: cover;
     height: 500px;
     width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
 }
 .ban-sec > div > div{
     width: 60%;
@@ -83,33 +106,60 @@
     color: white;
     padding-top: 38px;
     padding-left: 68px;
+    align-self: flex-start;
 }
 .ban-sec > div > div > div:first-child > h2{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    font-size: 60;
+    font-size: calc(60px - 28%);
 }
 .ban-sec > div > div > div:nth-child(2){
-    background-color: white;
-    border: 2px solid white;
-    width:50%;
+    background-color: #e5e5e500;
+    background-image: radial-gradient(#e5e5e500,#e5e5e500);
+    border: 0px solid white;
+    border-radius: 15px;
+    width: 100%;
+    height: 80%;
     display: flex;
-    align-items: center;
-    padding-top: -20px;
+    align-items: flex-end;
+    position: relative;
+    top: 20px;
+    padding: 15px;
+    box-shadow: 0 0 100px -25px;
+    gap: 10px;
+}
+.ban-sec > div > div > div:nth-child(2) > div{
+    align-self: flex-start;
+    width: 100%;
+    position: absolute;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: calc(50px - 28%);
+    color: white;
 }
 .ban-sec > div > div > div:nth-child(2) > input{
-    width: 80%;
-    height: 30%;
+    width: 97%;
+    height: 30px;
     text-decoration: none;
+    border: none;
+    border-radius:4px ;
+    background-color: #ffffff;
+    padding: 10px;
+    font-family: inherit;
 }
 .ban-sec > div > div > div:nth-child(2) > a{
     background-color: orange;
-    border: 1px solid gray;
-    width: 20%;
+    border: 1px solid none;
+    width: 14%;
+    height: 30px;
     display: flex;
     justify-content: center;
-    border-radius: 50px 0 0 0;
+    align-items: center;
+    right: 15px;
+    border-radius: 5px;
+    font-size: 150%;
 }
 .ban-sec > div > div > div:nth-child(2) > a:hover{
     background-color: black;
@@ -117,8 +167,8 @@
 }
 .ban-sec > div > a{
     color: white;
-    display: flex;
-    justify-content: flex-end;
+    display: none;
+    justify-self: flex-end;
     width: 10%;
     padding: 6px 20px;
     border-radius: 0 10px 10px 0;
@@ -135,7 +185,7 @@
     gap: 30px;
     background-color: orange;
     height: 150px;
-    padding: 0 100px;
+    padding: 0 9%;
 }
 .nts-sec > div{
     width: 100%;
@@ -149,7 +199,7 @@
 .nts-sec > div:first-child > h2{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 30;
+    font-size: calc(24px + 0.2vw);
     padding-left: 25px;
 }
 .nts-sec > div:last-child > p{
@@ -258,6 +308,7 @@
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
+    position: relative;
 }
 .dinlun-sec > div:nth-of-type(2) > div:nth-of-type(2) > div{
     background-color: rgba(255, 0, 0, 0.5);
@@ -293,6 +344,9 @@
     padding: 5px 15px;
     border-radius: 10px;
     float: right;
+    position: absolute;
+    bottom: -0px;
+    right: 20px;
 }
 .dinlun-sec > div:nth-of-type(2) > div:last-of-type{
     background-image: url(../images/see\ more.jpeg);
@@ -327,25 +381,26 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     gap: 30px;
-    background-color: rgb(228, 199, 146);
+    background-color: orange;
     height: 150px;
     padding: 0 100px;
 }
 .nts-sec2 > div{
-    width: 100%;
+    width: 60%;
     height: 80;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 .nts-sec2 > div:first-child{
-    border-left: 8px solid gray;
+    
 }
 .nts-sec2 > div:first-child > h2{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 30;
+    font-size: 30px;
     padding-left: 25px;
 }
 .nts-sec2 > div:last-child > p{
@@ -353,4 +408,130 @@
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     padding: 0 10px;
+    color: white;
+    font-size: 230%;
+}
+
+
+.app-sec{
+    background-color: orange;
+    width: 100%;
+    height: 600px;
+    padding:0px 3%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: calc(1vw + 5px);
+}
+.app-sec>div:first-child{
+    background-color: white;
+    box-shadow: 0px 20px 30px 1px;
+    position: relative;
+    top: -10px;
+    height: 100%;
+    width: 300px;
+    border-radius: 20px;
+}
+.app-sec>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 320px);
+}
+.app-sec>div:nth-child(2)>h2{
+    color: white;
+    font-size: 250%;
+    padding: 2%;
+    border-left: 8px solid #101010;
+}
+.app-sec>div:nth-child(2)>h3{
+    text-align: center;
+    width: 60%;
+}
+.app-sec>div:nth-child(2)>div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.app-sec>div:nth-child(2)>div:nth-child(3)>img{
+    width: max(150px,30%);
+}
+
+footer{
+    padding: 1vw 5%;
+    background-color: #101010;
+    color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+footer> h2> img{
+    width: 40px;
+    background-color: #e5e5e5;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer>div:first-child{
+    width: 400px;
+    height: 100%;
+}
+.footer>div:first-child>form>input:first-child{
+    width: 70%;
+    color: #101010;
+    background-color: #e5e5e5;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+.footer>div>form>input:nth-child(2){
+    background-color: orange;
+    color: white;
+    height: 30px;
+    width: 20%;
+    border-radius: 5px;
+    border: 1px solid #101010;
+    margin-left: 10px;
+}
+.footer>div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer>div:nth-child(2)>ul li{
+    list-style: none;
+    padding: 10px 0px;
+}
+.footer>div:nth-child(2)>ul li:hover{
+    color: orange;
+
+}
+@media only screen and (max-width: 785px){
+    .nav-bar>div:nth-child(2){
+        display:none;
+    }
+    .ban-sec >div>div {
+        width: 100%;
+    }
+    .ban-sec >div >div>div:nth-child(2){
+        width: 90%;
+    }
+    .ban-sec >div>a{
+        width: 15%;
+    }
+    .nts-sec{
+        padding: 0 5%;
+    }
+    .nts-sec>div:first-child> h2{
+        font-size: calc(17px + 0.5vw);
+    }
+    .app-sec>div:first-child {
+
+    }
+    .nts-sec2{
+        display: none;
+    }
 }
