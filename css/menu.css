@@ -1,0 +1,799 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.title-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+}
+.title-section>div:first-child{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:bold;
+    color:black;
+    font-style: italic;
+    font-size: larger;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+    position: relative;
+    top: 18px;
+}
+.title-section>div:last-child{
+    color: rgb(197, 54, 54);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-self:flex-start;
+    position: relative;
+    left: 75px;
+    word-spacing: 5px;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    padding: 0px 80px 0px 0px;
+}
+.nav-bar > div:first-child > img{
+    width: 50px;
+}
+.nav-bar > div:first-child{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    left: 50px;
+}
+.nav-bar > div:first-child > h2{
+    font-size: 25;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav-bar > div:first-child > h2 > span{
+    font-size: 19.7;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav-bar > div:nth-child(2){
+    width: 100%;
+}
+.nav-bar > div:nth-child(2) > ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-bar > div:nth-child(2) > ul > li{
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav-bar > div:last-child > img{
+    width: 50px;
+}
+.nav-bar > div:last-child{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.nav-bar > div:last-child > a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    border: 1px solid;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+.nav-bar > div:last-child > a:last-child{
+    background-color: orange;
+}
+.nav-bar > div:last-child > a:last-child:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.menu-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+}
+.menu-section>div:first-child{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 15px;
+    position: relative;
+    right: 50px;
+    top: 15px;
+    font-size: 40px;
+    color: black;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+.menu-section>div:nth-child(2){
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.menu-section>div:nth-child(2)>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    height: 280px;
+    width: 270px;
+    background-color:white;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0.1px;
+    transition: transform 0.5s;
+    transform: scale(1);
+}
+.menu-section>div:nth-child(2)>a>div:first-child{
+    border: 1px solid white;
+    width: 270px;
+    height: 50%;
+    position: relative;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top:11px;
+}
+.menu-section>div:nth-child(2)>a>div:nth-child(2){
+    position: relative;
+    bottom: 65px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.menu-section>div:nth-child(2)>a>div:nth-child(3){
+    border: 0.2px solid rgb(219, 213, 213);
+    width: 265px;
+    border-width: 0.1px;
+    position: relative;
+    bottom: 20px;
+}
+.menu-section>div:nth-child(2)>a>div:nth-child(4){
+    display: flex;
+    align-self:flex-end;
+    font-weight: 650;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(197, 85, 85);
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+}
+.bi-cart-plus-fill{
+    color: rgb(216, 100, 100);
+    font-size: 25px;
+    font-weight: 800;
+    position: relative;
+    display: flex;
+    right: 110px;
+    bottom: 3px; 
+}
+.menu-section>div:nth-child(3){
+    display: flex;
+    align-items: center;
+    width: 50px;
+    position: relative;
+    height: 15px;
+    right: 100px;
+    font-size: 40px;
+    color: black;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+.menu-section>div:nth-child(4){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.menu-section>div:nth-child(4)>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    height: 280px;
+    width: 270px;
+    background-color:white;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0.1px;
+    transition: transform 0.5s;
+    transform: scale(1);
+}
+.menu-section>div:nth-child(4)>a>div:first-child{
+    border: 1px solid white;
+    width: 270px;
+    height: 50%;
+    position: relative;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top:11px;
+}
+
+.menu-section>div:nth-child(4)>a>div:nth-child(2){
+    position: relative;
+    bottom: 65px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.menu-section>div:nth-child(4)>a>div:nth-child(3){
+    border: 0.2px solid rgb(219, 213, 213);
+    width: 265px;
+    border-width: 0.1px;
+    position: relative;
+    bottom: 20px;
+}
+.menu-section>div:nth-child(4)>a>div:nth-child(4){
+    display: flex;
+    align-self:flex-end;
+    font-weight: 650;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(197, 85, 85);
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+}
+.menu-section>div:nth-child(5){
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 15px;
+    position: relative;
+    right:100px;
+    font-size: 40px;
+    color: black;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+.menu-section>div:nth-child(6){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.menu-section>div:nth-child(6)>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    height: 280px;
+    width: 270px;
+    background-color:white;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0.1px;
+    transition: transform 0.5s;
+    transform: scale(1);
+}
+.menu-section>div:nth-child(6)>a>div:first-child{
+    border: 1px solid white;
+    width: 270px;
+    height: 50%;
+    position: relative;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top:11px;
+}
+
+.menu-section>div:nth-child(6)>a>div:nth-child(2){
+    position: relative;
+    bottom: 65px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.menu-section>div:nth-child(6)>a>div:nth-child(3){
+    border: 0.2px solid rgb(219, 213, 213);
+    width: 265px;
+    border-width: 0.1px;
+    position: relative;
+    bottom: 20px;
+}
+.menu-section>div:nth-child(6)>a>div:nth-child(4){
+    display: flex;
+    align-self:flex-end;
+    font-weight: 650;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(197, 85, 85);
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+}
+.menu-section>div:nth-child(7){
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 15px;
+    position: relative;
+    right: 100px;
+    font-size: 40px;
+    color: black;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+.menu-section>div:nth-child(8){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.menu-section>div:nth-child(8)>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    height: 280px;
+    width: 270px;
+    background-color:white;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0.1px;
+    transition: transform 0.5s;
+    transform: scale(1);
+}
+.menu-section>div:nth-child(8)>a>div:first-child{
+    border: 1px solid white;
+    width: 270px;
+    height: 50%;
+    position: relative;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top:11px;
+}
+
+.menu-section>div:nth-child(8)>a>div:nth-child(2){
+    position: relative;
+    bottom: 65px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.menu-section>div:nth-child(8)>a>div:nth-child(3){
+    border: 0.2px solid rgb(219, 213, 213);
+    width: 265px;
+    border-width: 0.1px;
+    position: relative;
+    bottom: 20px;
+}
+.menu-section>div:nth-child(8)>a>div:nth-child(4){
+    display: flex;
+    align-self:flex-end;
+    font-weight: 650;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(197, 85, 85);
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+}
+.menu-section>div:nth-child(9){
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 15px;
+    position: relative;
+    right: 50px;
+    font-size: 40px;
+    color: black;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+.menu-section>div:nth-child(10){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.menu-section>div:nth-child(10)>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    height: 280px;
+    width: 270px;
+    background-color:white;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0.1px;
+    transition: transform 0.5s;
+    transform: scale(1);
+}
+.menu-section>div:nth-child(10)>a>div:first-child{
+    border: 1px solid white;
+    width: 270px;
+    height: 50%;
+    position: relative;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top:11px;
+}
+
+.menu-section>div:nth-child(10)>a>div:nth-child(2){
+    position: relative;
+    bottom: 65px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.menu-section>div:nth-child(10)>a>div:nth-child(3){
+    border: 0.2px solid rgb(219, 213, 213);
+    width: 265px;
+    border-width: 0.1px;
+    position: relative;
+    bottom: 20px;
+}
+.menu-section>div:nth-child(10)>a>div:nth-child(4){
+    display: flex;
+    align-self:flex-end;
+    font-weight: 650;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(197, 85, 85);
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+}
+.menu-section>div:nth-child(11){
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 15px;
+    position: relative;
+    right: 50px;
+    font-size: 40px;
+    color: black;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+.menu-section>div:nth-child(12){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.menu-section>div:nth-child(12)>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    height: 280px;
+    width: 270px;
+    background-color:white;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0.1px;
+    transition: transform 0.5s;
+    transform: scale(1);
+}
+.menu-section>div:nth-child(12)>a>div:first-child{
+    border: 1px solid white;
+    width: 270px;
+    height: 50%;
+    position: relative;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top:11px;
+}
+
+.menu-section>div:nth-child(12)>a>div:nth-child(2){
+    position: relative;
+    bottom: 65px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.menu-section>div:nth-child(12)>a>div:nth-child(3){
+    border: 0.2px solid rgb(219, 213, 213);
+    width: 265px;
+    border-width: 0.1px;
+    position: relative;
+    bottom: 20px;
+}
+.menu-section>div:nth-child(12)>a>div:nth-child(4){
+    display: flex;
+    align-self:flex-end;
+    font-weight: 650;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(197, 85, 85);
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+}
+.menu-section>div:nth-child(2)>a:hover{
+    transform: scale(1.1);
+}
+.menu-section>div:nth-child(4)>a:hover{
+    transform: scale(1.1);
+}
+.menu-section>div:nth-child(6)>a:hover{
+    transform: scale(1.1);
+}
+.menu-section>div:nth-child(8)>a:hover{
+    transform: scale(1.1);
+}
+.menu-section>div:nth-child(10)>a:hover{
+    transform: scale(1.1);
+}
+.menu-section>div:nth-child(12)>a:hover{
+    transform: scale(1.1);
+}
+.menu-section>div:nth-child(13){
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 15px;
+    position: relative;
+    right: 50px;
+    font-size: 40px;
+    color: black;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+.menu-section>div:nth-child(14){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.menu-section>div:nth-child(14)>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    height: 280px;
+    width: 270px;
+    background-color:white;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0.1px;
+    transition: transform 0.5s;
+    transform: scale(1);
+}
+.menu-section>div:nth-child(14)>a>div:first-child{
+    border: 1px solid white;
+    width: 270px;
+    height: 50%;
+    position: relative;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top:11px;
+}
+
+.menu-section>div:nth-child(14)>a>div:nth-child(2){
+    position: relative;
+    bottom: 65px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.menu-section>div:nth-child(14)>a>div:nth-child(3){
+    border: 0.2px solid rgb(219, 213, 213);
+    width: 265px;
+    border-width: 0.1px;
+    position: relative;
+    bottom: 20px;
+}
+.menu-section>div:nth-child(14)>a>div:nth-child(4){
+    display: flex;
+    align-self:flex-end;
+    font-weight: 650;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(197, 85, 85);
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+}
+.menu-section>div:nth-child(15){
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 15px;
+    position: relative;
+    right: 50px;
+    font-size: 40px;
+    color: black;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+.menu-section>div:nth-child(16){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.menu-section>div:nth-child(16)>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    height: 280px;
+    width: 270px;
+    background-color:white;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0.1px;
+    transition: transform 0.5s;
+    transform: scale(1);
+}
+.menu-section>div:nth-child(16)>a>div:first-child{
+    border: 1px solid white;
+    width: 270px;
+    height: 50%;
+    position: relative;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top:11px;
+}
+
+.menu-section>div:nth-child(16)>a>div:nth-child(2){
+    position: relative;
+    bottom: 65px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.menu-section>div:nth-child(16)>a>div:nth-child(3){
+    border: 0.2px solid rgb(219, 213, 213);
+    width: 265px;
+    border-width: 0.1px;
+    position: relative;
+    bottom: 20px;
+}
+.menu-section>div:nth-child(16)>a>div:nth-child(4){
+    display: flex;
+    align-self:flex-end;
+    font-weight: 650;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(197, 85, 85);
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+}
+.menu-section>div:nth-child(17){
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 15px;
+    position: relative;
+    right: 50px;
+    font-size: 40px;
+    color: black;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+.menu-section>div:nth-child(18){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.menu-section>div:nth-child(18)>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    height: 280px;
+    width: 270px;
+    background-color:white;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0.1px;
+    transition: transform 0.5s;
+    transform: scale(1);
+}
+.menu-section>div:nth-child(18)>a>div:first-child{
+    border: 1px solid white;
+    width: 270px;
+    height: 50%;
+    position: relative;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top:11px;
+}
+
+.menu-section>div:nth-child(18)>a>div:nth-child(2){
+    position: relative;
+    bottom: 65px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.menu-section>div:nth-child(18)>a>div:nth-child(3){
+    border: 0.2px solid rgb(219, 213, 213);
+    width: 265px;
+    border-width: 0.1px;
+    position: relative;
+    bottom: 20px;
+}
+.menu-section>div:nth-child(18)>a>div:nth-child(4){
+    display: flex;
+    align-self:flex-end;
+    font-weight: 650;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(197, 85, 85);
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+}
+.menu-section>div:nth-child(14)>a:hover{
+    transform: scale(1.1);
+}
+.menu-section>div:nth-child(16)>a:hover{
+    transform: scale(1.1);
+}
+.menu-section>div:nth-child(18)>a:hover{
+    transform: scale(1.1);
+}
