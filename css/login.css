@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    color: #2e053a;
+    color: #000000;
 }
 .login-section{
   background-image:url(../images/back.png); 
@@ -53,8 +53,8 @@
     padding:20px 20px 0px 20px;
 }
 .login-section > div > a> button{
-    color: orange;
-    background-color: #2e053a;
+    color: white;
+    background-color: #000000;
     width: 90px;
     padding: 5px;
     border-radius: 5px;
@@ -66,14 +66,13 @@
     height: 30px;
 }
 .login-section>div>a>button:hover{
-    background-color: orange;
-    color: #2e053a;
+    color: orange;
 }
 .login-section > div > a{
     width: 90px; 
     margin:0px 20px;
     height: 30px;
-    color: #2e053a;
+    color: #000000;
     padding: 5px;
     border-radius: 5px;
     border: none;
