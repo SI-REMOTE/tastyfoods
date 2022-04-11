@@ -13,15 +13,14 @@ a:hover{
     justify-content: center;
     width: 100%;
     height: 50px;
-    background-color: #101010;
-    background-image: url(../images/bann.webp);
-    background-size: cover;
-    padding: 0px 5%;
-    color: white;
+    padding: 0 5%;
+    position: fixed;
+    z-index: 10;
+    background-color: #ffffff;
+
 }
 .nav-bar > div:first-child > img{
-    width: 50px;
-    background-color: #e5e5e5cc;
+    width: 30px;
 }
 .nav-bar > div:first-child{
     display: flex;
@@ -57,7 +56,7 @@ a:hover{
 }
 .nav-bar > div:last-child > i{
     font-size: 35px;
-    color: rgb(0, 219, 0);
+    color: rgb(0, 0, 0);
     justify-self: flex-start;
 }
 .nav-bar > div:last-child{
@@ -80,8 +79,8 @@ a:hover{
     background-color: orange;
 }
 .nav-bar > div:last-child > a:last-child:hover{
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    color: orange;
 }
 
 
@@ -127,7 +126,7 @@ a:hover{
     top: 20px;
     padding: 15px;
     box-shadow: 0 0 100px -25px;
-    gap: 10px;
+    gap: 0px;
 }
 .ban-sec > div > div > div:nth-child(2) > div{
     align-self: flex-start;
@@ -136,18 +135,19 @@ a:hover{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    font-size: calc(50px - 28%);
+    font-size: calc(45px - 28%);
     color: white;
 }
 .ban-sec > div > div > div:nth-child(2) > input{
-    width: 97%;
+    width: 67%;
     height: 30px;
     text-decoration: none;
     border: none;
-    border-radius:4px ;
+    border-radius:4px 0 0 4px;
     background-color: #ffffff;
     padding: 10px;
     font-family: inherit;
+    font-size: larger;
 }
 .ban-sec > div > div > div:nth-child(2) > a{
     background-color: orange;
@@ -158,7 +158,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     right: 15px;
-    border-radius: 5px;
+    border-radius:0 4px 4px 0;
     font-size: 150%;
 }
 .ban-sec > div > div > div:nth-child(2) > a:hover{
@@ -194,7 +194,7 @@ a:hover{
     align-items: center;
 }
 .nts-sec > div:first-child{
-    border-left: 8px solid gray;
+    border-left: 8px solid black;
 }
 .nts-sec > div:first-child > h2{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
@@ -268,7 +268,7 @@ a:hover{
 }
 .dinlun-sec > div:nth-of-type(2) > div:first-of-type > div{
     height: 35%;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     width: 100%;
     padding: 10px 15px;
@@ -311,7 +311,7 @@ a:hover{
     position: relative;
 }
 .dinlun-sec > div:nth-of-type(2) > div:nth-of-type(2) > div{
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 35%;
     color: white;
@@ -416,7 +416,7 @@ a:hover{
 .app-sec{
     background-color: orange;
     width: 100%;
-    height: 600px;
+    height: 500px;
     padding:0px 3%;
     display: flex;
     justify-content: space-between;
@@ -426,12 +426,12 @@ a:hover{
 }
 .app-sec>div:first-child{
     background-color: white;
-    box-shadow: 0px 20px 30px 1px;
+    box-shadow: 0px 0px 30px 1px;
     position: relative;
-    top: -10px;
-    height: 100%;
+    top: -40px;
+    height: 600px;
     width: 300px;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 .app-sec>div:nth-child(2){
     display: flex;
@@ -459,18 +459,29 @@ a:hover{
 }
 
 footer{
-    padding: 1vw 5%;
+    margin-top: 00px;
+    padding: 60px 5% 0;
     background-color: #101010;
     color: #e5e5e5;
     display: flex;
     flex-direction: column;
     font-size: 16px;
 }
+footer>h2{
+    font-size: 20px;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 60px;
+}
 footer> h2> img{
-    width: 40px;
+    width: 60px;
     background-color: #e5e5e5;
 }
 .footer{
+    font-size: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -485,12 +496,12 @@ footer> h2> img{
     background-color: #e5e5e5;
     border: none;
     border-radius: 5px;
-    height: 30px;
+    height: 40px;
 }
 .footer>div>form>input:nth-child(2){
     background-color: orange;
     color: white;
-    height: 30px;
+    height: 40px;
     width: 20%;
     border-radius: 5px;
     border: 1px solid #101010;
