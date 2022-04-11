@@ -2,7 +2,7 @@
     margin: 0;
     color: #2e053a;
 }
-.login-section{
+.signup-section{
   background-image:url(../images/back.png); 
   background-color: rgba(0, 0, 0, 0.3); 
   background-size: cover;
@@ -12,7 +12,7 @@
   width: 100vw;
   height: 100vh;
 }
-.login-section > div{
+.signup-section > div{
   background-color: white;
   opacity: 85%;
   border-radius: 20px;
@@ -22,37 +22,37 @@
   padding: 5px;
   box-shadow:-40px 40px 30px rgba(0,0,0,0.5);
 }
-.login-section > div > img{
+.signup-section > div > img{
     width: 50px;
     height: 50px;
     padding-top: 0px;
     padding-left: 10px;
 }
-.login-section > div > h4{
+.signup-section > div > h4{
     font-size: 30px;
     text-align: center;
 }
-.login-section > div > h5{
+.signup-section > div > h5{
     font-size: 15px;
     padding: 10px;
     text-align: center;
 }
-.login-section > div > p{
+.signup-section > div > p{
     font-size: 17px;
     margin: 10PX 20px;
 }
-.login-section > div > input{
+.signup-section > div > input{
    width: 80%;
    border-width:0px 0px 2px 0px;
    border-color: #000000;
    margin: 0px 20px ;
    height: 20px;
 }
-.login-section > div > h3{
+.signup-section > div > h3{
     width: 200px;
     padding:20px 20px 0px 20px;
 }
-.login-section > div > a> button{
+.signup-section > div > a> button{
     color: orange;
     background-color: #2e053a;
     width: 90px;
@@ -60,12 +60,12 @@
     border-radius: 5px;
     border: none;
 }
-.login-section > div > a{
+.signup-section > div > a{
     width: 90px; 
     margin:0px 20px;
     height: 30px;
 }
-.login-section>div>a>button:hover{
+.signup-section>div>a>button:hover{
     background-color: orange;
     color: #2e053a;
 }
