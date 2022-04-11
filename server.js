@@ -14,7 +14,7 @@ app.get('/login', (req,res)=>{
     res.sendFile(path.resolve(__dirname, "login.html"))
 })
 app.get("/signup", (req,res)=>{
-    res.sendFile(path.response(__dirname,'signup.html'))
+    res.sendFile(path.resolve(__dirname,'signup.html'))
 })
 app.get('/cart', function (req,res){
     res.sendFile(path.resolve(__dirname,'cart.html'))
