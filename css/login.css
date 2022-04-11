@@ -69,6 +69,19 @@
     background-color: orange;
     color: #2e053a;
 }
+.login-section > div > a{
+    width: 90px; 
+    margin:0px 20px;
+    height: 30px;
+    color: #2e053a;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+}
+.login-section>div>a:hover{
+    color: orange;
+}
 @media only screen and (max-width:600px) {
     *{
         font-size: 0px;
